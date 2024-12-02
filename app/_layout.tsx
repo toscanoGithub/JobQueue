@@ -36,11 +36,9 @@ export default function RootLayout() {
 
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack screenOptions={{headerShown: false}}>
-        <Stack.Screen name="(screens)"   />
-        <Stack.Screen name="/"/>
-        <Stack.Screen name="auth"/>
-        <Stack.Screen name="contractor-screen" options={{headerShown: true}}/>
-        <Stack.Screen name="worker-screen" options={{headerShown: true}}/>
+        <Stack.Screen name="(screens)/auth"/>
+        <Stack.Screen name="(screens)/contractor-screen" options={{headerShown: true}}/>
+        <Stack.Screen name="(screens)/worker-screen" options={{headerShown: true}}/>
         
         <Stack.Screen name="+not-found" />
       </Stack>
